@@ -1,0 +1,12 @@
+/* Estilos padrão */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Estilos para o modo escuro */
+body.dark-mode {
+    background-color: #333333;
+    color: white;
+}
+

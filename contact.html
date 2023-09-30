@@ -58,7 +58,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
                         <a href="index.html" class="nav-item nav-link active">Início</a>
-                        <a href="about.html" class="nav-item nav-link">Login</a>
+                        <a href="about.html" class="nav-item nav-link">CPaaS</a>
                         
                         
                         <div class="nav-item dropdown">
@@ -74,6 +74,9 @@
                         <a href="contact.html" class="nav-item nav-link">Área do cliente</a>
                         
                             <button id="toggleMode"  style="border-radius: 30px; background-color:#1363C6;;">Acessibilidade</button>
+                            <button style="background-color: #1363C6; border-radius: 30px;" id="aumentar-fonte">Aumentar Fonte</button>
+                            <button style="background-color: #1363C6;border-radius: 30px; " id="diminuir-fonte">Diminuir Fonte</button>
+                            <script src="scri.js"></script>
 
                             
 
@@ -93,7 +96,7 @@
         <div class="container pt-5">
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">Seja nosso cliente!</h1>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Área do cliente</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
                             <li class="breadcrumb-item"><a class="text-white" href="#">Faça</a></li>
@@ -138,7 +141,7 @@
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
                 
-                <h1 class="mb-4">Preencha os dados abaixo</h1>
+                <h1    class="mb-4">Login</h1>
             </div>
              <div class="row justify-content-center">
                 <div class="col-lg-7">
@@ -148,15 +151,15 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Seu nome</label>
+                                        <input type="text" class="form-control" id="name" minlength="6" maxlength="6" placeholder="Your Name">
+                                        <label  for="name">Login</label>
                                     </div>
                                 </div>
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                            <label for="name">Sobrenome</label>
+                                            <input type="text" class="form-control" minlength="8" maxlength="8" id="name" placeholder="Your Name">
+                                            <label for="name">Senha</label>
                                         </div>
                                     </div>
                               
@@ -173,8 +176,30 @@
                                   
                                 </div>
                                 
+                <div class="support">
+                    <div class="remember"> 
+                        <span><input type="checkbox" style="margin: 0;padding: 0; height: 13px;"></span>
+                        <span>Lembre-se de mim</span>
+                    </div>
+                    <div class="help">
+                        
+                    </div>
+                </div>
+    
+                <div class="login_footer">
+                   
+    
+                    <div class="sign_up">
+                         <p  style="color: black;" > Novo por aqui? <a style="color: black;"  href="cadastro.html">Faça seu Cadastro.</a> </p>
+                    </div>
+    
+                    <div class="terms">
+                        
+                     
+                    </div>
+                                
                                 <div class="col-12"> <br>
-                                    <a class="btn btn-primary " href="about.html" >Enviar</a>
+                                    <a class="btn btn-primary " href="#" >Enviar</a>
                                     
                                 </div>
                             </div>
@@ -212,14 +237,15 @@
                     <p><i class="fa fa-envelope me-3"></i>suporte@telecall.com</p>
                     
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <h5 class="text-white mb-4">Links</h5>
-                    <a class="btn btn-link" href="">Facebook</a>
-                    <a class="btn btn-link" href="">Instagram</a>
-                    <a class="btn btn-link" href="">Linkedin</a>
-                    <a class="btn btn-link" href="">Twitter</a>
-                    
-                </div>
+            
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                <h5 class="text-white mb-4">Links</h5>
+                <a class="btn btn-link" target="_blank" href="https://www.facebook.com/TelecallBr?mibextid=LQQJ4d">Facebook</a>
+                <a class="btn btn-link" target="_blank" href="https://instagram.com/telecallbr?igshid=MzRlODBiNWFlZA==">Instagram</a>
+                <a class="btn btn-link" target="_blank" href="https://www.linkedin.com/company/telecall/">Linkedin</a>
+                
+                
+            </div>
                
         </div>
         <div class="container wow fadeIn" data-wow-delay="0.1s">

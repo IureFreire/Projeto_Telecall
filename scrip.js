@@ -76,3 +76,17 @@
             return true;
         }
     
+      
+        function validarCadastro() {
+            var senha = document.getElementById("senha").value;
+            var confirmarSenha = document.getElementById("confirmar_senha").value;
+
+            // Verifica se as senhas são iguais
+            if (senha !== confirmarSenha) {
+                alert("As senhas não coincidem. Por favor, verifique.");
+                return false; // Impede o envio do formulário
+            }
+
+            return true; // Permite o envio do formulário se as senhas coincidirem
+        }
+    

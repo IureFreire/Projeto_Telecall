@@ -26,11 +26,11 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/novo.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     
 </head>
 
@@ -78,7 +78,7 @@
                                 <button id="toggleMode"  style="border-radius: 30px; background-color:#1363C6;;">Acessibilidade</button>
                                 <button style="background-color: #1363C6; border-radius: 30px;" id="aumentar-fonte">Aumentar Fonte</button>
                                 <button style="background-color: #1363C6;border-radius: 30px; " id="diminuir-fonte">Diminuir Fonte</button>
-                                <script src="scri.js"></script>
+                                <script src="js/scri.js"></script>
     
                                 
     
@@ -139,8 +139,8 @@
                         <input type="tel" id="telefone_fixo" name="telefone_fixo"><br>
                 
                         <!-- Endereço Completo -->
-                        <label    for="endereco">Endereço Completo:</label>
-        <textarea id="endereco" style ="background-color: #333; color: white;" name="endereco" rows="4" cols="40" required></textarea><br>
+                        <label for="login">Endereço:</label>
+                        <input type="text" id="endereço" name="endereço" required><br>
                         
                 
                         <!-- Login -->
@@ -153,25 +153,29 @@
                 
                         <!-- Confirmação de Senha -->
                         <label for="confirmar_senha">Confirme a Senha:</label>
-                        <input type="password" id="confirmar_senha" name="confirmar_senha" required><br> <br>
+                        <input type="password" id="confirmar_senha" name="confirmar_senha" required><br>   <br>
 
-                        <input   type="radio" id="masculino" name="genero"  value="masculino" style="margin: 0;padding: 0; height: 20px;" >
-                        <label  for="masculino">Masculino</label><br>
-                
-                        <input type="radio" id="feminino" name="genero" value="feminino" style="margin: 0;padding: 0; height: 20px;" >
-                        <label for="feminino">Feminino</label><br>
-                
-                        <input type="submit" value="Cadastrar">
+                        <label for="genero">Gênero:</label> 
+
+                            <select id="genero" name="genero"> 
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outros</option>
+                            </select> <br> 
+
+
+                 <br>
+                        <input type="submit" value="Cadastrar"> 
                         
                     </form>
                        
-                    </div>
+                    </div> <br>
                 </form>
     
                 <div class="support">
                     <div class="remember">
-                        <span><input type="checkbox" style="margin: 0;padding: 0; height: 13px;"></span>
-                        <span>Lembre-se de mim</span>
+                        <span><input type="checkbox" style="margin: 0;padding: 0; height: 13px;"></span> 
+                        <span>Lembre-se de mim</span> 
                     </div>
                     
                     <div class="help">
@@ -457,8 +461,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="script.js"></script>
-    <script src="scrip.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scrip.js"></script>
 </body>
 
 </html>

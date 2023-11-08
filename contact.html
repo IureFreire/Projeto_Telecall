@@ -26,11 +26,11 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/novo.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -76,7 +76,7 @@
                             <button id="toggleMode"  style="border-radius: 30px; background-color:#1363C6;;">Acessibilidade</button>
                             <button style="background-color: #1363C6; border-radius: 30px;" id="aumentar-fonte">Aumentar Fonte</button>
                             <button style="background-color: #1363C6;border-radius: 30px; " id="diminuir-fonte">Diminuir Fonte</button>
-                            <script src="scri.js"></script>
+                            <script src="js/scri.js"></script>
 
                             
 
@@ -97,11 +97,15 @@
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
                     <h1 class="display-4 text-white mb-4 animated slideInRight">Área do cliente</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Faça</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="#">&</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Diferença</li>
+                    <nav aria-label="breadcrumb"><h2>Escolha seu Gênero</h2>
+                        <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0"> 
+                            
+                            <!-- <li class="breadcrumb-item"><a class="text-white" href="#">Faça</a></li> -->
+                            <!-- <li class="breadcrumb-item"><a class="text-white" href="#">&</a></li> -->
+                            <!-- <li class="breadcrumb-item text-white active" aria-current="page">Diferença</li> -->
+                            <li><input type="radio" id="masculino" name="genero"  value="masculino"><strong> <i>Masculino</i> </strong></li> 
+                            <ol><input type="radio" id="feminino" name="genero"  value="feminino"><strong> <i>Feminino</i> </strong> </type></ol>
+                            <ol><input type="radio" id="outros" name="genero"  value="outros"><strong> <i>Outros</i> </strong> </type></ol>
                         </ol>
                     </nav>
                 </div>
@@ -172,13 +176,13 @@
                                     
                                 </div>
                           
-                                <div class="col-12">
+                                <div class="col-12"> <br>
                                   
                                 </div>
                                 
                 <div class="support">
                     <div class="remember"> 
-                        <span><input type="checkbox" style="margin: 0;padding: 0; height: 13px;"></span>
+                        <span><input type="checkbox" style="margin: 0;padding: 0; height: 13px;"></span> 
                         <span>Lembre-se de mim</span>
                     </div>
                     <div class="help">
@@ -190,7 +194,7 @@
                    
     
                     <div class="sign_up">
-                         <p  style="color: black;" > Novo por aqui? <a style="color: black;"  href="cadastro.html">Faça seu Cadastro.</a> </p>
+                         <p  style="color: black;" > Novo por aqui? <a style="color: black;"  href="cadastro.html"> <i style="color: red;">Faça seu Cadastro!</i> </a> </p>
                     </div>
     
                     <div class="terms">
@@ -280,7 +284,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

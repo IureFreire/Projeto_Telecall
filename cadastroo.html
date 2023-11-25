@@ -135,79 +135,104 @@
         </head>
 
         <body>
-
-          <form id="formularioCadastro" onsubmit="return validarFormulario()">
+          <!--inicio do formulario-->
+          <form id="formularioCadastro" onsubmit="return">
             <div class="fomulario_master margin-responsive">
 
               <div class="erro_nome"></div>
 
               <div class="form-floating">
-                <input type="text" id="nome" class="form-control" name="nome" minlength="6" maxlength="30"
-                  placeholder="Your Name">
+                <input type="text" 
+                id="nome" 
+                class="form-control inputs required" oninput="nomeValidate()"
+                name="nome" minlength="6" maxlength="30" placeholder="Your Name">
                 <label for="nome">Nome:</label>
+                <span class="span-required">*Nome deve ter no mínimo 3 caracteres alfabeticos</span>
               </div>
               
               <div class="form-floating">
-                <input type="text" id="nomeMaterno" name="nomeMaterno" class="form-control" minlength="6" maxlength="30"
-                  placeholder="Your Name">
+                <input type="text" id="nomeMaterno" name="nomeMaterno" 
+                class="form-control inputs required" oninput="nomeMaternoValidate()"
+                minlength="6" maxlength="30" placeholder="Your Name">
                 <label for="nomeMaterno">Nome Materno:</label>
+                <span class="span-required">*Nome Materno deve ter no mínimo 3 caracteres alfabeticos</span>
               </div>
               
               <div class="form-floating">
-                <input type="text" id="endereco" name="endereco" class="form-control" minlength="6" maxlength="30"
-                  placeholder="Your Name">
+                <input type="text" id="endereco" name="endereco" 
+                class="form-control inputs required" oninput="endereçoValidate()"
+                minlength="6" maxlength="30" placeholder="Your Name">
                 <label for="endereco">Endereço:</label>
+                <span class="span-required">*O campo Endereço é obrigatório.</span>
               </div>
               
               <div class="form-floating">
-                <input type="text" id="celular" name="celular" class="form-control" minlength="6" maxlength="11"
-                  placeholder="Formato: (00) 00000-0000">
+                <input type="tel" pattern="^[0-9]+$" id="celular" name="celular" 
+                class="form-control inputs required" oninput="celValidate()"
+                minlength="6" maxlength="11" placeholder="Formato: (00) 00000-0000">
                 <label for="celular">Celular:</label>
+                <span class="span-required">* O campo celular deve ter 11 números</span>
               </div>
               
               <div class="form-floating">
-                <input type="email" id="email" name="email" class="form-control" minlength="6" maxlength="30"
-                  placeholder="Your E-mail">
+                <input type="email" id="email" name="email"
+                class="form-control inputs required" oninput="emailValidate()"
+                minlength="6" maxlength="30" placeholder="Your E-mail">
                 <label for="email">E-mail:</label>
+                <span class="span-required">* Esse E-mail não é válido.</span>
               </div>
               
               <div class="form-floating">
-                <input type="text" id="telefone" name="telefone" class="form-control" minlength="6" maxlength="10" placeholder="Formato: (00) 0000-0000">
+                <input type="text" id="telefone" name="telefone"
+                class="form-control inputs required" oninput="telValidate()"
+                minlength="6" maxlength="10" placeholder="Formato: (00) 0000-0000">
                 <label for="telefone">Telefone:</label>
+                <span class="span-required">* O campo celular deve ter 10 números</span>
               </div>
               
               <div class="form-floating">
-                <input type="text" id="cpf" name="cpf" class="form-control" minlength="12" maxlength="15"
+                <input type="text" id="cpf" name="cpf"
+                class="form-control inputs required" oninput="cpfValidate()"
+                minlength="12" maxlength="12"
                   placeholder="Formato: 000.000.000-00">
                 <label for="cpf">CPF:</label>
+                <span class="span-required">* O campo CPF deve ter 11 números</span>
               </div>
               
               <div class="form-floating">
-                <input type="date" id="dataNascimento" name="dataNascimento" class="form-control" minlength="6"
-                  maxlength="6" placeholder="Formato: dd/mm/aaaa">
+                <input type="date" id="dataNascimento" name="dataNascimento"
+                class="form-control inputs required" oninput="nascimentoValidate()"
+                minlength="6" maxlength="6" placeholder="Formato: dd/mm/aaaa">
                 <label for="dataNascimento">Data de Nascimento:</label>
+                <span class="span-required">* O campo data de nascimento não pode estar vazio.</span>
               </div>
               
               <div class="form-floating">
-                <select id="genero" name="genero" class="form-control select_genero" minlength="6" maxlength="6"
-                  placeholder="Selecione seu Gênero">
+                <select id="genero" name="genero"
+                class="form-control select_genero inputs required" oninput="generovalidate()"
+                minlength="6" maxlength="6" placeholder="Selecione seu Gênero">
                   <option value="Selecione">Selecione</option>
                   <option value="masculino">Masculino</option>
                   <option value="feminino">Feminino</option>
                   <option value="outro">Outro</option>
                 </select>
                 <label for="genero">Gênero:</label>
+                <span class="span-required">* O campo gênero não pode estar vazio.</span>
               </div>
               
               <div class="form-floating">
-                <input type="password" id="senha" name="senha" class="form-control" minlength="6" maxlength="6"
+                <input type="password" id="senha" name="senha" class="form-control inputs required" oninput="senhaValidate()"
+                minlength="6" maxlength="21"
                   placeholder="Digite sua senha">
                 <label for="senha">Senha:</label>
+                <span class="span-required">*A senha deve ter entre 6 e 20 caracteres</span>
               </div>
               <div class="form-floating">
-                <input type="password" id="confirmarSenha" name="confirmarSenha" class="form-control" minlength="6"
-                  maxlength="6" placeholder="Confirme sua senha">
+                <input type="password" id="confirmarSenha" name="confirmarSenha"
+                class="form-control inputs required" oninput="comfirmacaoDeSenha()"  
+                minlength="6" maxlength="21" placeholder="Confirme sua senha">
                 <label for="confirmarSenha">Confirmar Senha:</label>
+                <span class="span-required">*As senhas precisam ser iguais.</span>
               </div>
               <div class="master_submit">
                 <button type="submit" class="button" value="Cadastrar">Cadastrar</button>

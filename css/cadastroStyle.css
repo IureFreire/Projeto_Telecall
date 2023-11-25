@@ -7,10 +7,6 @@ label {
   margin-bottom: 5px;
 }
 
-input {
-  margin-bottom: 10px;
-}
-
 ul {
   color: red;
   list-style: none;
@@ -20,11 +16,19 @@ ul {
 .fomulario_master{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .select_genero{
-    margin-bottom: 10px;
     background-color: white !important;
+}
+
+/*Styles para campos invalidos*/
+.span-required{
+  display: none;
+  font-size: 13px;
+  color: red;
+  margin-left: 8px;
 }
 
 /*BUTTON STYLE*/
@@ -102,4 +106,20 @@ ul {
   .size_cadastro{
     font-size: 22px;
   }
+
+  /*Styles para campos invalidos*/
+
+  .span-required{
+    display: none;
+    font-size: 12px;
+    color: red;
+    margin-left: 2px;
+  }
+
+  .master_submit{
+    display: flex;
+    margin-top: 12px;
+    flex-direction: row;
+  }
 }
+

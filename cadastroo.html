@@ -2,314 +2,265 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Área do cliente</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-    
+  <meta charset="utf-8">
+  <title>Área do cliente</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
-        rel="stylesheet">
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+    rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/novo.css" rel="stylesheet">
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-   
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/novo.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <!---Arquivo criado para estilização da pagina cadastro-->
+  <link rel="stylesheet" href="css/cadastroStyle.css">
+
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            
-        </div>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+
     </div>
-    <!-- Spinner End -->
+  </div>
+  <!-- Spinner End -->
 
 
-    <!-- Navbar Start -->
-    <div class="container-fluid sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white"> <i>Telecall</i> <span class="text-dark"></span></h1>
-                </a>
-                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link active">Início</a>
-                        <a href="about.html" class="nav-item nav-link">CPaaS</a>
-                        
-                        
-                        <div class="nav-item dropdown">
-                           <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Serviços</a>
-                            <div class="dropdown-menu bg-light mt-2">
-                                <a href="feature.html" class="dropdown-item">Número de Máscara</a>
-                                <a href="team.html" class="dropdown-item">2FA authentication</a>
-                                <a href="faq.html" class="dropdown-item">Google Verified Calls</a>
-                                <a href="testimonial.html" class="dropdown-item">SMS Programável</a>
-                                
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Acesse ao Login</a>
-                        
-                            <button id="toggleMode"  style="border-radius: 30px; background-color:#1363C6;;">Acessibilidade</button>
-                            <button style="background-color: #1363C6; border-radius: 30px;" id="aumentar-fonte">Aumentar Fonte</button>
-                            <button style="background-color: #1363C6;border-radius: 30px; " id="diminuir-fonte">Diminuir Fonte</button>
-                            <script src="js/scri.js"></script>
-
-                            
-
-                            
-                    </div> 
-                   
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Navbar End -->
+  <!-- Navbar Start -->
+  <div class="container-fluid sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a href="index.html" class="navbar-brand">
+          <h1 class="text-white"> <i>Telecall</i> <span class="text-dark"></span></h1>
+        </a>
+        <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto">
+            <a href="index.html" class="nav-item nav-link active">Início</a>
+            <a href="about.html" class="nav-item nav-link">CPaaS</a>
 
 
-    <!-- Hero Start -->
-    <div class="container-fluid pt-5 bg-primary hero-header">
-        <div class="container pt-5">
-            <div class="row g-5 pt-5">
-                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">Novo Cadastro</h1>
-                   
-                        <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0"> 
-                            
-                </div>
-             
-                </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        
-                    </div>
-                </div>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Serviços</a>
+              <div class="dropdown-menu bg-light mt-2">
+                <a href="feature.html" class="dropdown-item">Número de Máscara</a>
+                <a href="team.html" class="dropdown-item">2FA authentication</a>
+                <a href="faq.html" class="dropdown-item">Google Verified Calls</a>
+                <a href="testimonial.html" class="dropdown-item">SMS Programável</a>
+
+              </div>
             </div>
+            <a href="contact.html" class="nav-item nav-link">Acesse ao Login</a>
+
+            <button id="toggleMode" style="border-radius: 30px; background-color:#1363C6;;">Acessibilidade</button>
+            <button style="background-color: #1363C6; border-radius: 30px;" id="aumentar-fonte">Aumentar Fonte</button>
+            <button style="background-color: #1363C6;border-radius: 30px; " id="diminuir-fonte">Diminuir Fonte</button>
+            <script src="js/scri.js"></script>
+
+
+
+
+          </div>
+
         </div>
-    </div> -
-    <!-- Full Screen Search End -->
+      </nav>
+    </div>
+  </div>
+  <!-- Navbar End -->
 
-    
+
+  <!-- Hero Start -->
+  <div class="container-fluid pt-5 bg-primary hero-header">
+    <div class="container pt-5">
+      <div class="row g-5 pt-5">
+        <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+          <h1 class="display-4 text-white mb-4 animated slideInRight">Novo Cadastro</h1>
+
+          <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
+
+        </div>
+
+      </div>
+      <div class="modal-body d-flex align-items-center justify-content-center">
+        <div class="input-group" style="max-width: 600px;">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div> -
+  <!-- Full Screen Search End -->
 
 
-    <!-- Contact Start -->
-     <div class="freire">
-        <div class="freire">
-            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
-                 
-                <h1    class="mb-4">Preencha seus dados abaixo:</h1>
-                  
-                 
+
+
+  <!-- Contact Start -->
+  <div class="freire">
+    <div class="freire">
+      <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+
+        <h1 class="mb-4 size_cadastro">Preencha seus dados abaixo:</h1>
+
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Formulário de Cadastro</title>
+        </head>
+
+        <body>
+          <!--inicio do formulario-->
+          <form id="formularioCadastro" onsubmit="return">
+            <div class="fomulario_master margin-responsive">
+
+              <div class="erro_nome"></div>
+
+              <div class="form-floating">
+                <input type="text" 
+                id="nome" 
+                class="form-control inputs required" oninput="nomeValidate()"
+                name="nome" minlength="6" maxlength="30" placeholder="Your Name">
+                <label for="nome">Nome:</label>
+                <span class="span-required">*Nome deve ter no mínimo 3 caracteres alfabeticos</span>
+              </div>
               
-                 <head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Formulário de Cadastro</title>
-                    <style>
-                      body {
-                        font-family: Arial, sans-serif;
-                        margin: 20px;
-                      }
-                  
-                      label {
-                        display: block;
-                        margin-bottom: 5px;
-                      }
-                  
-                      input {
-                        margin-bottom: 10px;
-                      }
-                  
-                      ul {
-                        color: red;
-                        list-style: none;
-                        padding: 0;
-                      }
-                    </style>
-                  </head>
-                  <body>  
-                  
-                    <form id="formularioCadastro" onsubmit="return validarFormulario()">
-                      <label for="nome">Nome:</label>
-                      <input type="text" id="nome" name="nome">
-                    
-                      <label for="nomeMaterno">Nome Materno:</label>
-                      <input type="text" id="nomeMaterno" name="nomeMaterno">
-                    
-                      <label for="endereco">Endereço:</label>
-                      <input type="text" id="endereco" name="endereco">
-                    
-                      <label for="celular">Celular:</label>
-                      <input type="text" id="celular" name="celular" placeholder="Formato: (00) 00000-0000">
-                    
-                      <label for="email">E-mail:</label>
-                      <input type="email" id="email" name="email">
-                    
-                      <label for="telefone">Telefone:</label>
-                      <input type="text" id="telefone" name="telefone" placeholder="Formato: (00) 0000-0000">
-                    
-                      <label for="cpf">CPF:</label>
-                      <input type="text" id="cpf" name="cpf" placeholder="Formato: 000.000.000-00">
-                    
-                      
-                    
-                      <label for="dataNascimento">Data de Nascimento:</label>
-                      <input type="date" id="dataNascimento" name="dataNascimento" placeholder="Formato: dd/mm/aaaa">
-                    
-                      <label for="genero">Gênero:</label>
-                      <select id="genero" name="genero">
-
-                        <option value="Selecione">Selecione</option>
-                        <option value="masculino">Masculino</option>
-                        <option value="feminino">Feminino</option>
-                        <option value="outro">Outro</option>
-                      </select>
-                    
-                      <label for="senha">Senha:</label>
-                      <input type="password" id="senha" name="senha">
-                    
-                      <label for="confirmarSenha">Confirmar Senha:</label>
-                      <input type="password" id="confirmarSenha" name="confirmarSenha">
-                    
-                      <input type="submit" value="Cadastrar">
-                    </form>
-                   
-                  <script>
-                    function validarFormulario() {
-                        var nome = document.getElementById('nome').value;
-                        var nomeMaterno = document.getElementById('nomeMaterno').value;
-                        var endereco = document.getElementById('endereco').value;
-                        var celular = document.getElementById('celular').value;
-                        var email = document.getElementById('email').value;
-                        var telefone = document.getElementById('telefone').value;
-                        var cpf = document.getElementById('cpf').value;
-                        
-                        var dataNascimento = document.getElementById('dataNascimento').value;
-                        var genero = document.getElementById('genero').value;
-                        var senha = document.getElementById('senha').value;
-                        var confirmarSenha = document.getElementById('confirmarSenha').value;
-
-                        var erros = [];
-
-                      if (erros.length > 0) {
-                            exibirErros(erros);
-                            return false; // Impede o envio do formulário se houver erros
-                          }
-                  
-                      // Validar o campo Nome
-                      if (nome.length < 3 || nome.length > 60 || !/^[a-zA-Z\s]+$/.test(nome)) {
-                        erros.push(  " * O campo Nome deve ter entre 3 e 60 caracteres alfabéticos.");
-                      }
-                  
-                      // Validar o campo Nome Materno
-                      if (nomeMaterno.length < 3 || nomeMaterno.length > 60 || !/^[a-zA-Z\s]+$/.test(nomeMaterno)) {
-                        erros.push(" * O campo Nome Materno deve ter entre 3 e 60 caracteres alfabéticos.");
-                      }
-                  
-                      // Validar o campo Endereço
-                      if (endereco.trim() === '') {
-                        erros.push(" * O campo Endereço é obrigatório.");
-                      }
-                  
-                      // Validar o campo Celular
-                      if (!/^\(\d{2}\) \d{5}-\d{4}$/.test(celular)) {
-                        erros.push(" * O campo celular deve estar no formato (00) 00000-0000.");
-                      }
-                  
-                      // Validar o campo E-mail
-                      if (email.trim() === '' || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                        erros.push(" * O campo E-mail não é válido.");
-                      }
-
-                  
-                      // Validar o campo Senha
-                      if (senha.length < 6 || senha.length > 20) {
-                        erros.push(" * A senha deve ter entre 6 e 20 caracteres.");
-                      }
-                  
-                      // Validar a confirmação de Senha
-                      if (senha !== confirmarSenha) {
-                        erros.push(" * A confirmação de senha não coincide.");
-                      }
-
-  
-                     
-                      // Exibir erros, se houver algum
-                      if (erros.length > 0) {
-                        exibirErros(erros);
-                        return false; // Impede o envio do formulário se houver erros
-                      }
-                  
-                      // Continua com o envio do formulário se a validação for bem-sucedida
-                      return true;
-                    }
-
-                  
-                    function exibirErros(erros) {
-                      var ul = document.createElement('ul');
-                      erros.forEach(function(erro) {
-                        var li = document.createElement('li');
-                        li.textContent = erro;
-                        ul.appendChild(li);
-                      });
-                  
-                      // Limpar erros anteriores, se houver algum
-                      var errosAnteriores = document.querySelector('ul');
-                      if (errosAnteriores) {
-                        errosAnteriores.remove();
-                      }
-                  
-                      // Adicionar a lista de erros ao corpo do documento
-                      document.body.appendChild(ul);
-                    }
-                  </script>
-                  
-                  </body>
-                  </html>
-                   
-    
-           
-                        </form>
-                    </div>
-                </div>
+              <div class="form-floating">
+                <input type="text" id="nomeMaterno" name="nomeMaterno" 
+                class="form-control inputs required" oninput="nomeMaternoValidate()"
+                minlength="6" maxlength="30" placeholder="Your Name">
+                <label for="nomeMaterno">Nome Materno:</label>
+                <span class="span-required">*Nome Materno deve ter no mínimo 3 caracteres alfabeticos</span>
+              </div>
+              
+              <div class="form-floating">
+                <input type="text" id="endereco" name="endereco" 
+                class="form-control inputs required" oninput="endereçoValidate()"
+                minlength="6" maxlength="30" placeholder="Your Name">
+                <label for="endereco">Endereço:</label>
+                <span class="span-required">*O campo Endereço é obrigatório.</span>
+              </div>
+              
+              <div class="form-floating">
+                <input type="tel" pattern="^[0-9]+$" id="celular" name="celular" 
+                class="form-control inputs required" oninput="celValidate()"
+                minlength="6" maxlength="11" placeholder="Formato: (00) 00000-0000">
+                <label for="celular">Celular:</label>
+                <span class="span-required">* O campo celular deve ter 11 números</span>
+              </div>
+              
+              <div class="form-floating">
+                <input type="email" id="email" name="email"
+                class="form-control inputs required" oninput="emailValidate()"
+                minlength="6" maxlength="30" placeholder="Your E-mail">
+                <label for="email">E-mail:</label>
+                <span class="span-required">* Esse E-mail não é válido.</span>
+              </div>
+              
+              <div class="form-floating">
+                <input type="text" id="telefone" name="telefone"
+                class="form-control inputs required" oninput="telValidate()"
+                minlength="6" maxlength="10" placeholder="Formato: (00) 0000-0000">
+                <label for="telefone">Telefone:</label>
+                <span class="span-required">* O campo celular deve ter 10 números</span>
+              </div>
+              
+              <div class="form-floating">
+                <input type="text" id="cpf" name="cpf"
+                class="form-control inputs required" oninput="cpfValidate()"
+                minlength="12" maxlength="12"
+                  placeholder="Formato: 000.000.000-00">
+                <label for="cpf">CPF:</label>
+                <span class="span-required">* O campo CPF deve ter 11 números</span>
+              </div>
+              
+              <div class="form-floating">
+                <input type="date" id="dataNascimento" name="dataNascimento"
+                class="form-control inputs required" oninput="nascimentoValidate()"
+                minlength="6" maxlength="6" placeholder="Formato: dd/mm/aaaa">
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <span class="span-required">* O campo data de nascimento não pode estar vazio.</span>
+              </div>
+              
+              <div class="form-floating">
+                <select id="genero" name="genero"
+                class="form-control select_genero inputs required" oninput="generovalidate()"
+                minlength="6" maxlength="6" placeholder="Selecione seu Gênero">
+                  <option value="Selecione">Selecione</option>
+                  <option value="masculino">Masculino</option>
+                  <option value="feminino">Feminino</option>
+                  <option value="outro">Outro</option>
+                </select>
+                <label for="genero">Gênero:</label>
+                <span class="span-required">* O campo gênero não pode estar vazio.</span>
+              </div>
+              
+              <div class="form-floating">
+                <input type="password" id="senha" name="senha" class="form-control inputs required" oninput="senhaValidate()"
+                minlength="6" maxlength="21"
+                  placeholder="Digite sua senha">
+                <label for="senha">Senha:</label>
+                <span class="span-required">*A senha deve ter entre 6 e 20 caracteres</span>
+              </div>
+              <div class="form-floating">
+                <input type="password" id="confirmarSenha" name="confirmarSenha"
+                class="form-control inputs required" oninput="comfirmacaoDeSenha()"  
+                minlength="6" maxlength="21" placeholder="Confirme sua senha">
+                <label for="confirmarSenha">Confirmar Senha:</label>
+                <span class="span-required">*As senhas precisam ser iguais.</span>
+              </div>
+              <div class="master_submit">
+                <button type="submit" class="button" value="Cadastrar">Cadastrar</button>
+              </div>
             </div>
-        </div>
-    </div>  <!--- ATE AQUI -->
-    <!-- Contact End -->
-        
+          </form>
+        </body>
 
-    <!-- Newsletter Start -->
-  
-    <!-- Newsletter End -->
+</html>
 
 
-    <!-- Footer Start -->
-    <!-- <div class="container-fluid bg-dark text-white-50 footer pt-5">
+
+</form>
+</div>
+</div>
+</div>
+</div>
+</div> <!--- ATE AQUI -->
+<!-- Contact End -->
+
+
+<!-- Newsletter Start -->
+
+<!-- Newsletter End -->
+
+
+<!-- Footer Start -->
+<!-- <div class="container-fluid bg-dark text-white-50 footer pt-5">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
@@ -356,21 +307,23 @@
 
 
     <!- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+<!--Criação do arquivo js para cadastroo.html-->
+<script src="./js/cadastro/mascara.js"></script>
+<script src="./js/cadastro/cadastro.js"></script>
 
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="js/script.js"></script>
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
